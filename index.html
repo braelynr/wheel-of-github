@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Wheel of GitHub</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body> 
+        <div class="grid">
+            <div>
+                <h1 style="color: #53a1ff;">Wheel of GitHub</h1>
+            </div>  
+            <div class="languages">
+                <select id="languages">
+                    <option> JavaScript	</option>
+                    <option> Python	</option>
+                    <option> Java	</option>
+                    <option> Go	</option>
+                    <option> Ruby	</option>
+                    <option> C++	</option>
+                    <option> TypeScript	</option>
+                    <option> PHP	</option>
+                    <option> C#	</option>
+                    <option> C	</option>
+                    <option> Shell	</option>
+                    <option> Scala	</option>
+                    <option> Dart	</option>
+                    <option> Rust	</option>
+                    <option> Kotlin	</option>
+                    <option> Swift	</option>
+                    <option> DM	</option>
+                    <option> Groovy	</option>
+                    <option> Objective-C</option>
+                </select>
+            </div>
+
+            <div id="mainbox" class="mainbox">
+                <div id="box" class="box">
+                <div class="box1">
+                    <span class="span1"><b>Rando Bug</b></span>
+                    <span class="span2"><b>Feature</b></span>
+                    <span class="span3"><b>Documentation</b></span>
+                    <span class="span4"><b>Help Pls</b></span>
+                </div>
+                <div class="box2">
+                    <span class="span1"><b>Buggy</b></span>
+                    <span class="span2"><b>Why</b></span>
+                    <span class="span3"><b>Idk</b></span>
+                    <span class="span4"><b>Help Wanted</b></span>
+                </div>
+                </div> 
+                <button class="spin" onclick="rotateFunction()">Random Issue</button>
+            </div>
+            <br><br>
+            <div>
+                <h1 style="color: #53a1ff;">Braelyn and Tejas are HTML Gods</h1>
+              </div>
+          </div>
+
+          <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">The Results Are In!</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body ml-3" style="padding: 30px;">
+                    <div class="row">
+                        <div class="col-2 text-truncate ml-3">
+                          Repo Name: 
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div  id="repo-name" class="col-2 text-truncate ml-3">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-2 text-truncate ml-3">
+                          Issue Name: 
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div  id="issue-name" class="col-2 text-truncate ml-3">
+                        </div>
+                      </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <script src="app.js"></script>
+    </body>
+</html>
